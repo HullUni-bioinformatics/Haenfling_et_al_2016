@@ -6,6 +6,9 @@ __Content__:
  - Data processing workflow as Jupyter notebooks
  - Supplementary data:
   - reference sequences used in analyses in Genbank format ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/reference_DBs))
+  - adapter sequences used for 12S fragment ([here]())
+  - SRA accession numbers for raw Illumina data ([here]())
+
 
 ##Introduction
 
