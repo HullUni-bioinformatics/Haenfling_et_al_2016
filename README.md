@@ -1,7 +1,7 @@
 # Haenfling_et_al_2016
 Data processing workflow and supplementary data for __Haenfling et al. 2016 - Environmental DNA metabarcoding of lake fish communities reflects long-term data from established survey methods__.
 
-##Content:
+##Contents:
  - Supplementary [data](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data):
   - reference sequences used in analyses in Genbank format ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data/reference_DBs))
   - adapter sequences used for 12S fragment ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data/adapters))
@@ -13,9 +13,10 @@ Data processing workflow and supplementary data for __Haenfling et al. 2016 - En
 
 ##Introduction
 
-Illumina data was processed (from raw reads to taxonomic assignments) using the [metaBEAT](https://github.com/HullUni-bioinformatics/metaBEAT) pipeline ([version 0.8](https://github.com/HullUni-bioinformatics/metaBEAT/releases)). The pipeline relies on a range of open bioinformatics tools. To facilitate full reproducibility of our analyses we have deposited a self contained docker images with all dependencies [here](https://hub.docker.com/r/chrishah/metabeat/).
+To facilitate full reproducibility of our analyses we provide Jupyter notebooks illustrating our workflow and all necessary supplementary data in this repository.
 
-We provide complete
+Illumina data was processed (from raw reads to taxonomic assignments) using the [metaBEAT](https://github.com/HullUni-bioinformatics/metaBEAT) pipeline ([version 0.8](https://github.com/HullUni-bioinformatics/metaBEAT/releases)). The pipeline relies on a range of open bioinformatics tools, which we have wrapped up in a self contained docker image which includes all necessary dependencies [here](https://hub.docker.com/r/chrishah/metabeat/).
+
 ##Setting up the environment
 
 In order to retrieve supplementary data (reference sequences etc.) start by cloning this repository to your current directory:
@@ -34,7 +35,7 @@ Once Docker is installed you can enter the environment by typing, e.g.:
 docker run -i -t --net=host --name metaBEAT -v $(pwd):/home/working chrishah/metabeat:v0.8 /bin/bash
 ```
 
-This will download the metabeat v0.8 image (if it's not yet present on your computer) and enter the 'container', i.e. the self contained environment (Note that `sudo` may be necessary in some cases). With the above command the container's directory `/home/working` will be mounted to your current working directory (as instructed by `$(pwd)`), in other words, anything you do in the container's `/home/working` directory will be synced with your current working directory on your local machine. 
+This will download the metaBEAT v0.8 image (if it's not yet present on your computer) and enter the 'container', i.e. the self contained environment (Note that `sudo` may be necessary in some cases). With the above command the container's directory `/home/working` will be mounted to your current working directory (as instructed by `$(pwd)`), in other words, anything you do in the container's `/home/working` directory will be synced with your current working directory on your local machine. 
 
 ##Data processing workflow
 
