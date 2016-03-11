@@ -13,7 +13,12 @@ Illumina data was processed (from raw reads to taxonomic assignments) using the 
 
 ##Setting up the environment
 
-In order to make use of our self contained environment you will have to install [Docker](https://www.docker.com/) on your computer. Docker is compatible with all major operating systems. See the [Docker documenation](https://docs.docker.com/) for details. On Ubuntu installing Docker should be as easy as:
+In order to retrieve supplementary data (reference sequences etc.) start by cloning this repository to your current directory:
+```
+git clone --recursive https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016.git
+```
+
+In order to make use of our self contained analysis environment you will have to install [Docker](https://www.docker.com/) on your computer. Docker is compatible with all major operating systems. See the [Docker documenation](https://docs.docker.com/) for details. On Ubuntu installing Docker should be as easy as:
 
 ```
 sudo apt-get install docker.io
