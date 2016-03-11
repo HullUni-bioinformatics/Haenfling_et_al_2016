@@ -40,7 +40,7 @@ Raw illumina data has been deposited with Genbank (BioSample accessions: SAMN045
 
 Files should be named 'sampleID-marker', followed by '_1' or '_2' to identify the forward/reverse read file respectively. sampleID must corresponds to the first column in the file `Sample_accessions.tsv` [here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv), marker is either '12S' or 'CytB'.
 
-To download the raw read data you can follow the steps in [this]() notebook.
+To download the raw read data you can follow the steps in [this](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/raw_reads/How_to_download_from_SRA.ipynb) notebook.
 
 So, ideally running the following:
 ```
