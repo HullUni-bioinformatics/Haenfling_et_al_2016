@@ -5,9 +5,9 @@ __Content__:
  - Instructions on how to set up all dependencies for data processing/analyses
  - Data processing workflow as Jupyter notebooks
  - Supplementary data:
-  - reference sequences used in analyses in Genbank format ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/reference_DBs))
-  - adapter sequences used for 12S fragment ([here]())
-  - SRA accession numbers for raw Illumina data ([here]())
+  - reference sequences used in analyses in Genbank format ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data/reference_DBs))
+  - adapter sequences used for 12S fragment ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data/adapters))
+  - SRA accession numbers for raw Illumina data ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv))
 
 
 ##Introduction
@@ -36,6 +36,8 @@ This will download the metabeat v0.8 image (if it's not yet present on your comp
 
 ##Data processing workflow
 
-Raw illumina data has been deposited with Genbank (BioSample accessions: SAMN04530423-SAMN04530510).
+Raw illumina data has been deposited with Genbank (BioSample accessions: SAMN04530423-SAMN04530510) - SRA accession numbers see [here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv).
+
+
 
 
