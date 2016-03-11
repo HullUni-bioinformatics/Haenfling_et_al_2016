@@ -1,13 +1,13 @@
 # Haenfling_et_al_2016
-Data processing workflow and supplementary data for Haenfling et al. 2016 - Environmental DNA metabarcoding of lake fish communities reflects long-term data from established survey methods.
+Data processing workflow and supplementary data for __Haenfling et al. 2016 - Environmental DNA metabarcoding of lake fish communities reflects long-term data from established survey methods__.
 
-__Content__:
- - Instructions on how to set up all dependencies for data processing/analyses
- - Data processing workflow as Jupyter notebooks
+##Content:
  - Supplementary data:
   - reference sequences used in analyses in Genbank format ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data/reference_DBs))
   - adapter sequences used for 12S fragment ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data/adapters))
   - SRA accession numbers for raw Illumina data ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv))
+ - Instructions on how to set up all dependencies for data processing/analyses
+ - Data processing workflow as Jupyter notebooks
 
 
 ##Introduction
@@ -36,8 +36,27 @@ This will download the metabeat v0.8 image (if it's not yet present on your comp
 
 ##Data processing workflow
 
-Raw illumina data has been deposited with Genbank (BioSample accessions: SAMN04530423-SAMN04530510) - SRA accession numbers see [here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv).
+Raw illumina data has been deposited with Genbank (BioSample accessions: SAMN04530423-SAMN04530510) - SRA accession numbers see [here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv). Before following the workflow below, you'll need to download the raw reads from SRA. Our workflow expects that the raw Illumina data is present in a directory `raw_reads` at the base of the repository structure and that the file are named according to the following convention:
 
+Files should be named 'sampleID-marker', followed by '_1' or '_2' to identify the forward/reverse read file respectively. sampleID must corresponds to the first column in the file `Sample_accessions.tsv` [here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv), marker is either '12S' or 'CytB'.
 
+So, ideally running the following:
+```
+ls -1 ./raw_reads | head
+```
+
+should yield something like:
+```
+Bassenthwaite_01-12S_1.fastq.gz
+Bassenthwaite_01-12S_2.fastq.gz
+Bassenthwaite_01-CytB_1.fastq.gz
+Bassenthwaite_01-CytB_2.fastq.gz
+Bassenthwaite_02-12S_1.fastq.gz
+Bassenthwaite_02-12S_2.fastq.gz
+Bassenthwaite_02-CytB_1.fastq.gz
+Bassenthwaite_02-CytB_2.fastq.gz
+Bassenthwaite_03-12S_1.fastq.gz
+Bassenthwaite_03-12S_2.fastq.gz
+``` 
 
 
