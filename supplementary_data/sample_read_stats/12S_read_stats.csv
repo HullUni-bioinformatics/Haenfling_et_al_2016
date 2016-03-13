@@ -1,4 +1,4 @@
-sample,total,merged-non-chimeras,cluster_thres,clusters_total,clusters_min_cov,cluster_above_thres,queries
+sample,total,non-chimeras,cluster_thres,clusters_total,clusters_min_cov,cluster_above_thres,queries
 Bassenthwaite_01,43078,18350,1,1635,3,363,16864
 Bassenthwaite_02,22844,10006,1,1090,3,256,9050
 Bassenthwaite_03,37448,15154,1,1577,3,343,13737
