@@ -3,19 +3,19 @@
 
 
 Start MITObim container
-```
+```bash
 sudo docker run -i -t -v $(pwd):/home/data chrishah/mitobim /bin/bash
 ```
 
 In container - navigate to mount point and create working directory
-```
+```bash
 cd /home/data
 mkdir PhiX
 cd PhiX
 ```
 
 Per sample - detect PhiX contamination, by mapping reads to PhiX reference
-```
+```bash
 for sample in $(ls -1 ../raw_reads/ | grep "fastq" | sed 's/_[1-2].fastq.gz//g' | sort -n | uniq)
 do 
 	echo -e "\n### $sample ###\n"
@@ -29,7 +29,7 @@ done
 ```
 
 Summarizing results and write out as table: `Phix_summary.tsv`
-```
+```bash
 rm Phix_summary.tsv
 echo -e "sample\ttotal reads\tPhix read proportion" > Phix_summary.tsv
 for a in $(ls -hlrt | grep "^d" | perl -ne 'chomp; @a=split(" "); print "$a[-1]\n"')
@@ -53,7 +53,7 @@ done
 
 
 Calculate cummulative frequency distributions for each marker
-```
+```bash
 #12S
 for a in $(seq 0 .00001 .03)
 do 
