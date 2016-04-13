@@ -1,7 +1,7 @@
 # Haenfling_et_al_2016
 Data processing workflow and supplementary data for __Haenfling et al. 2016 - Environmental DNA metabarcoding of lake fish communities reflects long-term data from established survey methods__.
 
-##Contents:
+##Contents
  - Supplementary [data](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data):
   - reference sequences (curated reference databases) used in analyses in Genbank format ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data/reference_DBs))
   - adapter sequences used for 12S fragment ([here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data/adapters))
@@ -40,7 +40,7 @@ This will download the metaBEAT v0.8 image (if it's not yet present on your comp
 
 ##Data processing workflow
 
-Raw illumina data has been deposited with Genbank (BioProject: PRJNA313432; BioSample accessions: SAMN04530423-SAMN04530510; SRA accessions: SRR3359939-SRR3360124) - see sample specific accesions [here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv). Before following the workflow below, you'll need to download the raw reads from SRA. To download the raw read data you can follow the steps in [this](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/raw_reads/How_to_download_from_SRA.ipynb) notebook.
+Raw illumina data has been deposited with Genbank (BioProject: PRJNA313432; BioSample accessions: SAMN04530423-SAMN04530510; SRA accessions: SRR3359939-SRR3360124) - see sample specific accessions [here](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/supplementary_data/Sample_accessions.tsv). Before following the workflow below, you'll need to download the raw reads from SRA. To download the raw read data you can follow the steps in [this](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/raw_reads/How_to_download_from_SRA.ipynb) notebook.
 
 
 With the data in place you should be able to __fully rerun/reproduce our analyses__ by following the steps outlined in the Jupyter notebooks that we provide for the [12S](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/12S/12S.ipynb) and [CytB](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/blob/master/CytB/CytB.ipynb) datasets.
