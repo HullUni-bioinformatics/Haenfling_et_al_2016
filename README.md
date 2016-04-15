@@ -1,6 +1,7 @@
 # Haenfling_et_al_2016
 Data processing workflow and supplementary data for __Haenfling et al. 2016 - Environmental DNA metabarcoding of lake fish communities reflects long-term data from established survey methods. _Molecular Ecology___.
 
+Release 1.0 of this repository has been archived: [![DOI](https://zenodo.org/badge/19905/HullUni-bioinformatics/Haenfling_et_al_2016.svg)](https://zenodo.org/badge/latestdoi/19905/HullUni-bioinformatics/Haenfling_et_al_2016)
 
 ##Contents
  - Supplementary [data](https://github.com/HullUni-bioinformatics/Haenfling_et_al_2016/tree/master/supplementary_data):
